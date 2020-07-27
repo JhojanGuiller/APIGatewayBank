@@ -14,6 +14,9 @@ public class APIGatewayBankConfiguration {
 				.route(r -> r.path("/clients/**")
 							.uri("http://localhost:8801/")
 							.id("clientWebService"))
+				.route(r -> r.path("/products/**")
+							.uri("http://localhost:8802/")
+							.id("productWebService"))
 				.build();
 	}
 	
