@@ -13,10 +13,16 @@ public class APIGatewayBankConfiguration {
 		return builder.routes()
 				.route(r -> r.path("/clients/**")
 							.uri("http://localhost:8801/")
-							.id("clientWebService"))
+							.id("clientMicroService"))
 				.route(r -> r.path("/products/**")
 							.uri("http://localhost:8802/")
-							.id("productWebService"))
+							.id("productMicroService"))
+				.route(r -> r.path("/bankAccounts/**")
+							.uri("http://localhost:8803/")
+							.id("bankAccountMicroService"))
+				.route(r -> r.path("/transactions/**")
+							.uri("http://localhost:8804/")
+							.id("transactionMicroService"))
 				.build();
 	}
 	
