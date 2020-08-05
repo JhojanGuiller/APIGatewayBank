@@ -15,16 +15,16 @@ El APIGatewayBank se ejecuta en el puerto 8080
   - http://localhost:8080/clients
 
 - Obtener un cliente por id [Metodo GET]
-  - http://localhost:8080/clients/<id>
+  - http://localhost:8080/clients/{idCliente}
 
 - Agregar un cliente nuevo [Metodo POST]
   - http://localhost:8080/clients/addClient
 
 - Actualizar un cliente [Metodo PUT]
-  - http://localhost:8080/clients/updateClient/<id>
+  - http://localhost:8080/clients/updateClient/{idCliente}
 
 - Eliminar un cliente [Metodo DELETE]
-  - http://localhost:8080/clients/deleteClient/<id>
+  - http://localhost:8080/clients/deleteClient/{idCliente}
 
 ## INFO PRODUCT SERVICE
 
@@ -32,16 +32,16 @@ El APIGatewayBank se ejecuta en el puerto 8080
   - http://localhost:8080/products
 
 - Obtener un producto por id [Metodo GET]
-  - http://localhost:8080/products/<id>
+  - http://localhost:8080/products/{idProducto}
 
 - Agregar un producto nuevo [Metodo POST]
   - http://localhost:8080/products/addProduct
 
 - Actualizar un producto [Metodo PUT]
-  - http://localhost:8080/products/updateProduct/<id>
+  - http://localhost:8080/products/updateProduct/{idProducto}
 
 - Eliminar un producto [Metodo DELETE]
-  - http://localhost:8080/products/deleteProduct/<id>
+  - http://localhost:8080/products/deleteProduct/{idProducto}
 
 ## BANK ACCOUNT SERVICE
 
@@ -49,16 +49,16 @@ El APIGatewayBank se ejecuta en el puerto 8080
   - http://localhost:8080/bankAccounts
 
 - Obtener una cuenta bancaria id [Metodo GET]
-  - http://localhost:8080/bankAccounts/<id>
+  - http://localhost:8080/bankAccounts/{idCuenta}
 
 - Agregar una cuenta bancaria nueva [Metodo POST]
   - http://localhost:8080/bankAccounts/addBankAccount
 
 - Actualizar una cuenta bancaria [Metodo PUT]
-  - http://localhost:8080/bankAccounts/updateBankAccount/<id>
+  - http://localhost:8080/bankAccounts/updateBankAccount/{idCuenta}
 
 - Eliminar una cuenta bancaria [Metodo DELETE]
-  - http://localhost:8080/bankAccounts/deleteBankAccount/<id>
+  - http://localhost:8080/bankAccounts/deleteBankAccount/{idCuenta}
 
 ## TRANSACTION SERVICE
 
@@ -66,13 +66,16 @@ El APIGatewayBank se ejecuta en el puerto 8080
   - http://localhost:8080/transactions
 
 - Obtener una transaccion por id [Metodo GET]
-  - http://localhost:8080/transactions/<id>
+  - http://localhost:8080/transactions/{idTransaccion}
 
 - Agregar una transaccion nueva [Metodo POST]
   - http://localhost:8080/transactions/makeTransaction
 
 - Actualizar una transaccion [Metodo PUT]
-  - http://localhost:8080/transactions/updateTransaction/<id>
+  - http://localhost:8080/transactions/updateTransaction/{idTransaccion}
 
 - Eliminar una transaccion [Metodo DELETE]
-  - http://localhost:8080/transactions/deleteTransaction/<id>
+  - http://localhost:8080/transactions/deleteTransaction/{idTransaccion}
+
+- Realizar una transaccion (Deposito / Retiro) [Metodo POST]
+  - http://localhost:8080/transactions/makeTransaction
